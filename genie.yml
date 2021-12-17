@@ -1,0 +1,17 @@
+devices:
+  LAB:
+    connections:
+      cli:
+        ip: 10.56.0.3
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: admin
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+    alias: LAB
+
+
