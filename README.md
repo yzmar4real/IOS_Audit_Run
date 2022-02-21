@@ -52,7 +52,9 @@ source bin/activate
 
 ## Step 2 - Defining the Testbed for devices to be audited
 
-1. Edit genie.yml file to include parameters for your devices. It is usually advisable to start from the Core device outbound.
+1. Edit genie.yml file to include parameters for your devices. It is usually advisable to start from the Core device outbound. 
+
+Note that you can update the list of devices based on your cdp discovery and rerun the script for maximum reach.
 
 ## Step 3 - Executing the Script 
 
