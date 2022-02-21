@@ -35,14 +35,13 @@ Python3.6 and above
 
 ## Step 1 - Downloading - Option A Using a Docker Image
 
-1. Download the latest version of the ACITOOLKIT from docker hub
+1. Download the latest version of the PYATS from docker hub
 
-docker pull dockercisco/acitoolkit 
+$ docker pull ciscotestautomation/pyats:latest
 
 2. Run the docker image 
 
-docker run -it --name acitoolkit dockercisco/acitoolkit
-
+$ docker run -it ciscotestautomation/pyats:latest /bin/bash
 
 ## Step 1 - Downloading - Option B Using GIT
 
