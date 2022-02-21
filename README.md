@@ -29,8 +29,6 @@ You can also find the results of a full run in the text file (Result.txt)
 
 ## Prerequisites 
 
-ACITOOLKIT
-
 Python3.6 and above
 
 ## Step 1 - Downloading - Option A Using a Docker Image
@@ -47,22 +45,11 @@ $ docker run -it ciscotestautomation/pyats:latest /bin/bash
 
 1. Clone the repository
 
-git clone https://github.com/datacenter/acitoolkit.git
-
-2. Install ACITOOLKIT library
-
-cd acitoolkit
-python setup.py install
-
-## Step 2 - Script Setup
-
-1. Clone this repository into your desired directory using the command:
-
-git clone https://github.com/yzmar4real/ACI_LAYER1_CHECK.git
+git clone https://github.com/yzmar4real/IOS_Audit_Run.git
 
 2. CD into the directory 
 
-cd ACI_LAYER1_CHECK
+cd IOS_Audit_Run
 
 3. (Optional) Use the directory as a virtual environment for the project
 
@@ -72,6 +59,13 @@ python3 -m venv .
 
 source bin/activate
 
-6. Execute the main script from console
+## Step 2 - Defining the Testbed for devices to be audited
 
-python3 Main.py 
+1. Edit genie.yml file to include parameters for your devices. It is usually advisable to start from the Core device outbound.
+
+
+## Step 3 - Executing the Script 
+
+1. Execute the main script from console
+
+python3 IOS_Master.py
