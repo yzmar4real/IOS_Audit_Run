@@ -1,17 +1,17 @@
 devices:
-  LAB:
+  <your device hostname>:
     connections:
       cli:
-        ip: 10.56.0.3
+        ip: <your device IP>
         protocol: ssh
     credentials:
       default:
-        password: cisco
-        username: admin
+        password: <your device password>
+        username: <your device username>
       enable:
-        password: cisco
-    os: ios
-    type: ios
-    alias: LAB
+        password: <your device enable password>
+    os: <your device os - e.g ios, nxos>
+    type: <your device type - e.g ios, nxos>
+    alias: <your device alias/nickname>
 
 
