@@ -1,24 +1,15 @@
 # IOS_Audit_Run
  
- Python Code that allows Network Engineers to run through their ACI Infrastructure for Layer 1 availability and compare to a set of interfaces that reflects their tenant computing a health score
- 
-
-
 ## Overview
 
+ Python Code that allows Network Engineers to run through their existing infrastructure running IOS Software using discovery commands to establish a baseline of the infrastructure state with saved CSV files to show physical connectivity, mac-addresses, etc. This use case is particularly helpful in validating network documentation as well as for Engineers who have joined new networks without any basline documentation as a reference. PYATS's modular methods with parsing makes it incredibly easy to target specific datasets and document within CSV format. 
 
-
-**Device/Interface Health**: 
-
-The idea of the health check is to provide visibility into possible layer 1 problems within the network fabric. The script runs to check for interfaces that are down and compares them with expected set of interfaces and computes a health percentage score. 
 
 **Python**
 
-The script is written in python using acitoolkit to interact with APIC,and computation based on defined set of interfaces.
+The script is written in python using PYATS to interact with the active devices, a definite set of commands based on experience as well as CSV files to store the outcomes.
 
-**Output**: The results of the CLI commands are stored in simple .txt file: (L1_Output.txt, L1_Health.txt) ![Sample Output](Output_Snapshot.JPG)
-
-You can also find the results of a full run in the text file (Result.txt)
+**Output**: The results of the commands are stored in individual CSV files. You can also find the raw configuration outputs as well as the exception errors stored in individual text files that would be created after each run.
 
 ## Contacts
 *Oluyemi Oshunkoya (yemi_o@outlook.com)
@@ -62,7 +53,6 @@ source bin/activate
 ## Step 2 - Defining the Testbed for devices to be audited
 
 1. Edit genie.yml file to include parameters for your devices. It is usually advisable to start from the Core device outbound.
-
 
 ## Step 3 - Executing the Script 
 
