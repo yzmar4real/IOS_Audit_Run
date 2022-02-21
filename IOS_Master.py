@@ -14,9 +14,9 @@ log.info(banner("LOADING TESTBED FILES"))
 testbed = load('genie.yml')
 log.info("\nPASS: Successfully loaded testbed '{}'\n".format(testbed.name))
 
-######## Defining header lists for information to be stored within the csv files under each category ########
+######## Defining the list of commands to perform and storing them in specific arrays ########
 
-log.info(banner("CREATING CSV FILE REFERENCE LISTS"))
+log.info(banner("CREATING ARRAY STORE FOR COMMAND OUTPUTS"))
 
 command = ['show run', 'show version', 'show interfaces status', 'show ip arp', 'show cdp neighbor detail', 'show mac address-table', 'show etherchannel summary', 'show ip int brief', 'show interfaces description']
 special = {'show version', 'show interfaces status', 'show ip arp', 'show cdp neighbor detail', 'show mac address-table', 'show etherchannel summary', 'show ip int brief', 'show interfaces description'}
