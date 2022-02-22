@@ -19,7 +19,8 @@ The script is written in python using PYATS to interact with the active devices,
 
 ## Solution Components
 *Python
-*
+*Genie
+*PYATS
 
 ## Prerequisites 
 
