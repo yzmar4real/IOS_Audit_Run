@@ -36,11 +36,14 @@ IOS_Master.py: includes the final script run which contains relevant commands, a
 
 ## Step 1 - Downloading - Option A Using a Docker Image
 
-1. Download the latest version of the PYATS from docker hub
+1. Download and setup docker suitable for your Operating System 
+https://docs.docker.com/get-docker/
+
+2. Download the latest version of the PYATS from docker hub
 
 $ docker pull ciscotestautomation/pyats:latest
 
-2. Run the docker image 
+3. Run the docker image 
 
 $ docker run -it ciscotestautomation/pyats:latest /bin/bash
 
