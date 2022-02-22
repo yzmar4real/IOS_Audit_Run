@@ -26,6 +26,14 @@ The script is written in python using PYATS to interact with the active devices,
 
 Python3.6 and above
 
+## Toolbox
+The toolbox includes multiple librairies to clarify the code.
+
+IOS_Master_Function.py: includes all functions relating to parsing the configuration excerpts and providing relevant data.
+Leveraging Genie Parsers to extract a specific output, and saving it to the database.
+
+IOS_Master.py: includes the final script run which contains relevant commands, and stores returned values into a CSV file.
+
 ## Step 1 - Downloading - Option A Using a Docker Image
 
 1. Download the latest version of the PYATS from docker hub
